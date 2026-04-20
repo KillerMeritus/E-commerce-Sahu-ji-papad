@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SAHU JI Ke Papad - Festive Landing Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Devanagari:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#3d2e00",
+                        "on-tertiary": "#3b2f00",
+                        "primary-fixed": "#ffdcc3",
+                        "tertiary-fixed-dim": "#e4c447",
+                        "secondary": "#e6c364",
+                        "primary-fixed-dim": "#ffb77d",
+                        "inverse-on-surface": "#640916",
+                        "primary": "#ffb77d",
+                        "surface-container": "#48000a",
+                        "primary-container": "#542a00",
+                        "on-secondary-fixed": "#241a00",
+                        "secondary-container": "#785d00",
+                        "on-secondary-fixed-variant": "#584400",
+                        "surface": "#310005",
+                        "on-primary": "#4d2600",
+                        "tertiary-fixed": "#ffe172",
+                        "on-tertiary-fixed-variant": "#554600",
+                        "on-tertiary-fixed": "#221b00",
+                        "tertiary-container": "#c7a92c",
+                        "surface-tint": "#ffb77d",
+                        "secondary-fixed": "#ffe08f",
+                        "on-background": "#ffdad9",
+                        "on-primary-fixed": "#2f1500",
+                        "surface-container-highest": "#6b0f1a",
+                        "surface-variant": "#6b0f1a",
+                        "on-error": "#690005",
+                        "on-surface": "#ffdad9",
+                        "error-container": "#93000a",
+                        "outline-variant": "#564241",
+                        "inverse-surface": "#ffdad9",
+                        "secondary-fixed-dim": "#e6c364",
+                        "surface-container-low": "#410008",
+                        "on-surface-variant": "#ddc0bf",
+                        "inverse-primary": "#904d00",
+                        "on-primary-container": "#ed8200",
+                        "tertiary": "#e4c447",
+                        "on-secondary-container": "#fdd977",
+                        "outline": "#a58b8a",
+                        "on-tertiary-container": "#4c3e00",
+                        "surface-bright": "#71141e",
+                        "background": "#310005",
+                        "error": "#ffb4ab",
+                        "on-primary-fixed-variant": "#6e3900",
+                        "surface-container-high": "#5b0210",
+                        "surface-dim": "#310005",
+                        "surface-container-lowest": "#270003",
+                        "bright-saffron": "#FF8C00",
+                        "metallic-gold": "#E8C84A"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Noto Serif", "serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"],
+                        "display": ["Rozha One", "serif"],
+                        "hindi": ["Noto Sans Devanagari", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .font-hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+        .font-display { font-family: 'Rozha One', serif; }
+        .gradient-gold-text {
+            background: linear-gradient(135deg, #ffb77d 0%, #542a00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<nav class="bg-[#310005]/90 backdrop-blur-md text-[#E8C84A] font-serif fixed top-0 w-full z-50 transition using bg-[#410008] no-line rule shadow-[0_20px_50px_rgba(39,0,3,0.3)] hidden md:block">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="font-serif text-2xl font-bold tracking-tighter text-[#E8C84A]">
+                SAHU JI Ke Papad
+            </div>
+<div class="flex items-center gap-8">
+<a class="text-[#FDF5E6] hover:text-[#E8C84A] font-label text-sm hover:opacity-80 transition-all duration-300 scale-105 on hover, slight glow pulse" href="#">Our Heritage</a>
+<a class="text-[#E8C84A] border-b-2 border-[#E8C84A] pb-1 font-label text-sm hover:opacity-80 transition-all duration-300 scale-105 on hover, slight glow pulse" href="#">Papad</a>
+<a class="text-[#FDF5E6] hover:text-[#E8C84A] font-label text-sm hover:opacity-80 transition-all duration-300 scale-105 on hover, slight glow pulse" href="#">Achaar</a>
+<a class="text-[#FDF5E6] hover:text-[#E8C84A] font-label text-sm hover:opacity-80 transition-all duration-300 scale-105 on hover, slight glow pulse" href="#">Festive Gifts</a>
+</div>
+<div class="flex items-center gap-4">
+<button aria-label="shopping_cart" class="text-[#E8C84A] hover:opacity-80 transition-all duration-300 scale-105 on hover, slight glow pulse">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button aria-label="person" class="text-[#E8C84A] hover:opacity-80 transition-all duration-300 scale-105 on hover, slight glow pulse">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Mobile) -->
+<aside class="bg-[#410008] text-[#E8C84A] font-serif h-full w-72 fixed left-0 tonal shift from surface to surface-container-low ambient shadow-2xl shadow-[#270003] flex flex-col h-screen py-8 z-50 md:hidden overflow-y-auto hidden">
+<!-- Content intentionally hidden for this layout, but structure mapped per JSON -->
+<div class="px-6 mb-8">
+<h2 class="text-[#E8C84A] font-serif italic text-2xl mb-4">SAHU JI Ke Papad</h2>
+<div class="flex items-center gap-4 mb-6">
+<img alt="User profile" class="w-12 h-12 rounded-full object-cover" data-alt="close up of a smiling indian woman with traditional bindi and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0CbZRmkSubifLxlhljVvR89Ioae2vCushAFzKstz0u4JEZP5oIYqO5-McGiQVZazid711tyJW3hAG3JnJk-RZYyYSclnayslfvL3CdH2j2oDe6ogAFVV7v7sR58TPrhl3Xgjg71KEgiEU3coqL9O-lGiSKAMYnUcyhuUuyl53l5c8KaN_KA85J_NTdvPXqU-_Bfvyws-OO2dfAzDid57LkRGe7PNQ_hLFAG6izkkfWVmOufZ8HFNgFLh77hxP7D1o41f0bgsrfEQ"/>
+<div>
+<p class="font-headline text-lg">Namaste</p>
+<p class="font-hindi text-sm text-secondary">त्योहार का स्वाद</p>
+</div>
+</div>
+<button class="w-full bg-bright-saffron text-on-primary font-bold py-3 rounded-lg hover:bg-bright-saffron/90 transition-colors">Book Bulk Gifting</button>
+</div>
+<nav class="flex-1 flex flex-col gap-2 px-4">
+<a class="flex items-center gap-4 px-4 py-3 bg-[#6B0F1A] text-[#E8C84A] rounded-r-full font-bold Active: scale 0.98x" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label uppercase tracking-widest text-sm">Home</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#FDF5E6]/70 hover:bg-[#6B0F1A]/50 rounded-r-full transition-colors" href="#">
+<span class="material-symbols-outlined">bakery_dining</span>
+<span class="font-label uppercase tracking-widest text-sm">Papad Varieties</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#FDF5E6]/70 hover:bg-[#6B0F1A]/50 rounded-r-full transition-colors" href="#">
+<span class="material-symbols-outlined">liquor</span>
+<span class="font-label uppercase tracking-widest text-sm">Homemade Achaar</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#FDF5E6]/70 hover:bg-[#6B0F1A]/50 rounded-r-full transition-colors" href="#">
+<span class="material-symbols-outlined">redeem</span>
+<span class="font-label uppercase tracking-widest text-sm">Diwali Hampers</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#FDF5E6]/70 hover:bg-[#6B0F1A]/50 rounded-r-full transition-colors" href="#">
+<span class="material-symbols-outlined">local_shipping</span>
+<span class="font-label uppercase tracking-widest text-sm">Track Order</span>
+</a>
+</nav>
+</aside>
+<main class="flex-1 mt-20 md:mt-24">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex items-center bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Festive Background" class="w-full h-full object-cover opacity-30" data-alt="rich dark red velvet background with scattered glowing diyas and golden marigold petals in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs40c9-wcTmrfW6AREY-yJEXRpqoikpCW9iza1cz9_sTiSF0veC1PaNxtQvQravpTpX9_VuxkfZi1cVP5T7itYkLRHHsLFMGjiEIYhEy_9Pt511UMaVu6C1MbG4s56_ix3mnoFDv7meoOJTN5Z5YN3UBWxU2_eURv_qJnc6QFstKyrwONDT2xvbIVejKAokGzkqewFjt-h9_2a8FEiA0jtfioRxyZEh842NsI5pFDdyC4WXeuCy3UaZK13OeRhMq4nKXB6AHdyIpE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 flex flex-col items-start gap-6 pt-12 md:pt-0">
+<span class="font-hindi text-secondary text-xl md:text-2xl tracking-wide">त्योहार का स्वाद, हर दिन</span>
+<h1 class="font-display text-5xl md:text-7xl lg:text-8xl text-on-surface leading-tight drop-shadow-lg">
+                        The Royal <br/>
+<span class="gradient-gold-text">Heritage</span>
+</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed">
+                        Experience the authentic taste of tradition with our handcrafted papads and achaar, made with love and secret family recipes passed down through generations.
+                    </p>
+<div class="flex flex-wrap gap-4 mt-4">
+<button class="bg-bright-saffron text-on-primary font-label font-bold py-4 px-8 rounded-xl hover:scale-105 hover:shadow-[0_0_20px_rgba(255,140,0,0.4)] transition-all duration-300">
+                            Shop Now
+                        </button>
+<button class="border-2 border-metallic-gold text-metallic-gold font-label font-bold py-4 px-8 rounded-xl hover:bg-metallic-gold/10 transition-all duration-300">
+                            Explore Hampers
+                        </button>
+</div>
+</div>
+<div class="md:w-1/2 relative flex justify-center items-center mt-12 md:mt-0">
+<div class="absolute w-[120%] h-[120%] bg-surface-container-highest/20 rounded-full blur-3xl -z-10"></div>
+<img alt="Assorted Papads" class="relative z-10 w-full max-w-md object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700" data-alt="stack of crispy golden brown papads beautifully arranged on a dark traditional brass thali with subtle warm overhead lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhVkXixc6yzgcWSzW71v5Y0Zm7SEilsrtiu2XKjOdHB9xgCZaIWu7puFeIZ5C7sjbG5dRXg3VSbCwAcCbUsk_gJEz3HSbUfSHHTZBiaIPQKin-SZqQEHqaUBZM2Uka9WRINo5BKvxT1-BKY3cnNP5v_emarR-pLcyIaoEoh-EFZ1A7iu8xkhwRdjX1kIMtMLdKQbMjfFI4J0MSQkNeBn3OBmVVzR9y93TniUJBqDO6RC9y7dX5YdoeMcTH_wspZoS2cMTCN4iUhbk"/>
+</div>
+</div>
+</section>
+<!-- Festive Ribbon -->
+<div class="w-full bg-surface-container py-4 overflow-hidden border-y border-surface-container-high relative">
+<div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNlNGM0NDciIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9zdmc+')] opacity-50"></div>
+<div class="flex whitespace-nowrap animate-[marquee_20s_linear_infinite] gap-8 items-center text-tertiary/40 font-hindi text-lg">
+<span>त्योहार का स्वाद, हर दिन</span>
+<span class="material-symbols-outlined text-sm">flare</span>
+<span>The Modern Raj Bari</span>
+<span class="material-symbols-outlined text-sm">flare</span>
+<span>त्योहार का स्वाद, हर दिन</span>
+<span class="material-symbols-outlined text-sm">flare</span>
+<span>Handcrafted Tradition</span>
+<span class="material-symbols-outlined text-sm">flare</span>
+<span>त्योहार का स्वाद, हर दिन</span>
+</div>
+</div>
+<!-- Featured Categories (Bento Grid) -->
+<section class="container mx-auto px-6 py-24">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl md:text-5xl text-on-surface mb-4">Curated Curiosities</h2>
+<div class="w-24 h-1 bg-gradient-to-r from-transparent via-secondary to-transparent mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+<!-- Large Card: Papads -->
+<div class="md:col-span-2 bg-surface-container-high rounded-2xl overflow-hidden relative group h-[400px] flex items-end p-8 transition-all hover:bg-surface-container-highest">
+<img alt="Crispy Papads" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay group-hover:scale-105 transition-transform duration-700" data-alt="close up of diverse varieties of raw and roasted papads laid out on dark rustic wood table with natural side light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGd2pb4zbJ3yAohSrWf-CLzc1uP0KhLGB-CXdV0nbpZmcXvL3c9PMxbqaO_RwXO4OhybzDrz4x9FFs7YMGT7GPDrP5Grj7wskCOKUORVZHsG8AldNtMZeZtCg2CAYqmMwItH4zjg7brm71qT4iaYNvM4QasGHoX-9FhWf93CaG7gPon2ENCQS9q4VUMy4wWzTCTm5j2gTxdBiiO2b1zfVkG-Ym-bFpwL6mdejq0mYJdXwGCbuacvQsiRpXdevblVsOxZRwZFHqFKI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="relative z-10 w-full">
+<h3 class="font-headline text-3xl text-on-surface mb-2">Signature Papads</h3>
+<p class="font-body text-on-surface-variant mb-6 max-w-sm">Hand-rolled perfection, sun-dried to capture the essence of our heritage.</p>
+<button class="flex items-center gap-2 text-secondary font-label hover:text-primary transition-colors">
+                            Explore Collection <span class="material-symbols-outlined">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Tall Card: Achaar -->
+<div class="bg-surface-container-high rounded-2xl overflow-hidden relative group h-[400px] flex items-end p-8 transition-all hover:bg-surface-container-highest">
+<img alt="Spicy Achaar" class="absolute top-0 right-0 w-3/4 h-3/4 object-contain opacity-60 group-hover:scale-110 transition-transform duration-700 origin-top-right drop-shadow-2xl" data-alt="traditional ceramic jar filled with rich red mango pickle surrounded by scattered whole spices on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSyR-qW9lKty__oSBJQNu6CxVGKG-cNIb94N0BjTvAOMk_yclBOLwUuUDM6y0fnpVHQWx9mEajFqif_1zRkA_RsZh-hlNCuRnTDu3QFmuKcDLofbM_84jRMp77bN01h7XWh6x67rpKYM4xoVmu7Uk_J4fwaM01sBzNjEtGm0CRyYqY4ERBzu5m_siJM_QUNXRU-w2RAd8jMwhP_DV7oGIQmmnnVxhQ-BaGr2KReiLglrpgaybJMH4aGyByuA3882uayzExIj9dnpc"/>
+<div class="relative z-10 w-full">
+<h3 class="font-headline text-2xl text-on-surface mb-2">Heritage Achaar</h3>
+<p class="font-body text-sm text-on-surface-variant mb-6">Matured in earthen jars under the sun.</p>
+<button class="flex items-center gap-2 text-secondary font-label hover:text-primary transition-colors text-sm">
+                            Shop Jars <span class="material-symbols-outlined text-sm">arrow_right_alt</span>
+</button>
+</div>
+</div>
+<!-- Small Card: Namkeen -->
+<div class="bg-surface-container-high rounded-2xl overflow-hidden relative group h-[250px] flex items-center p-8 transition-all hover:bg-surface-container-highest">
+<div class="relative z-10 w-2/3">
+<h3 class="font-headline text-xl text-on-surface mb-2">Festive Namkeen</h3>
+<button class="text-secondary font-label text-sm underline hover:text-primary transition-colors mt-2">View Range</button>
+</div>
+<img alt="Namkeen Mix" class="absolute -right-4 -bottom-4 w-1/2 object-contain drop-shadow-xl group-hover:rotate-6 transition-transform duration-500" data-alt="bowl of colorful indian savory snacks namkeen spilling slightly onto a dark maroon velvet cloth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsEdwGqbNP7FpU7c9FsdNq4IrQZvF4aSWFmVrf76J9pFbSctwpOsMJHhvY57H7UmlIMHmOz3GyKKFTjah6F4Hpgq25AjGHNFnc8_QwPBjhR996enQjOZ2mTSB2xxRemVIkygXVOqgkbds9yNcNsC_Ni4KUqIGzgOZMtPDpraeA1F4hEUBoq_WGBBUMWxYdysRL7ae8kymJwtjUkOD5VxPGL94d8sY0dhPdkwRNBu9xo-jQKB0Eganqc9c7xVIxXGgnaY0x81lkSL4"/>
+</div>
+<!-- Medium Card: Hampers -->
+<div class="md:col-span-2 bg-[#6B0F1A] rounded-2xl overflow-hidden relative group h-[250px] flex items-center p-8 border border-outline-variant/15 shadow-[0_20px_48px_rgba(39,0,3,0.12)]">
+<div class="relative z-10 md:w-1/2">
+<h3 class="font-headline text-2xl text-on-surface mb-3">Diwali Gifting Hampers</h3>
+<p class="font-body text-sm text-on-surface-variant mb-6">Curated selections in royal packaging.</p>
+<button class="bg-bright-saffron text-on-primary font-label font-bold py-2 px-6 rounded-lg hover:bg-bright-saffron/90 transition-colors text-sm">
+                            Pre-order Now
+                        </button>
+</div>
+<img alt="Gift Hamper" class="absolute right-0 top-0 h-full w-1/2 object-cover opacity-80 mix-blend-luminosity group-hover:mix-blend-normal transition-all duration-700" data-alt="elegant diwali gift box in deep red and gold tied with ribbon sitting on dark table next to a lit diya" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX0i7PvzPaoJVWWpvY0GUR0uyeIPx5oBQXmaVxlZH1tsMlFCKppR4xov7IWQTkonBrvRXZD9voaLoNZNbJ0_XSUbNzegt5psRVME31Kb_oX5XqAd5DCsxVFmFrXDKEo-61reLfo3BqK3YQKyLMSisG5pofODUu_vuTLCiRSObXY-AcyomboWuYYHP7_InenbNAVyL1xVNSl_30aH8IK68JvGSUjL57GNySdKpVmC4HkvQrc2FEMnr5mqCpw7TDHN8zPWAuDjlAW0Q"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#6B0F1A] via-[#6B0F1A]/80 to-transparent md:w-2/3"></div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (Asymmetric Layout) -->
+<section class="bg-surface-container-low py-24 relative overflow-hidden">
+<div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-5/12 relative">
+<img alt="Making Process" class="rounded-2xl w-full object-cover aspect-[4/5] shadow-2xl relative z-10" data-alt="hands of an elderly indian woman gently mixing spices into a large traditional brass bowl in a sunlit kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7XtRrNJP-E031siUggiayDs7p2tuR4MzD_4rz1Qo-A6yYVxlwJV9BqO-TmB3yoOwjM8q1FaAtC9c9mtLCiai9loEAsuSR44jsqgpUh8YaexmC60p-vF8OMa91GbLspciQCPYgysx6Z_7W-yQjHK7AOzGDVFmxqybA2JYUwBS18vz7VSQ6Ik9HZKeBVACUeaZfjAuzpCQ1fudnPm7B_dWaPh6Hfd1PUFXsGT-QKL0daf7FnSrwTCld0pKh6atV3nakqRqiaQw7qL4"/>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-surface-container-highest rounded-full -z-0"></div>
+</div>
+<div class="md:w-7/12 flex flex-col gap-10">
+<div>
+<h2 class="font-display text-4xl md:text-5xl text-on-surface mb-4">The Promise of Purity</h2>
+<p class="font-hindi text-secondary text-lg">त्योहार का स्वाद, हर दिन</p>
+</div>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">local_florist</span>
+</div>
+<div>
+<h4 class="font-headline text-xl text-on-surface mb-2">Sun-Dried Naturally</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed max-w-md">Our papads are dried under the natural warmth of the sun, ensuring the perfect crispness and flavor retention without artificial heat.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">family_history</span>
+</div>
+<div>
+<h4 class="font-headline text-xl text-on-surface mb-2">Heirloom Recipes</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed max-w-md">Using spice blends that have remained unchanged for over fifty years, preserving the true essence of the Raj Bari kitchens.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary">handshake</span>
+</div>
+<div>
+<h4 class="font-headline text-xl text-on-surface mb-2">Handcrafted with Care</h4>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed max-w-md">Every single papad is rolled by skilled artisans, not machines, supporting local communities and ensuring unique quality.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#310005] text-[#E8C84A] font-serif text-sm tracking-wide w-full mt-20 tonal shift to deep maroon base flat no shadows flex flex-col items-center gap-6 py-12 border-t border-[#6B0F1A]/20">
+<div class="text-[#E8C84A] font-serif text-lg mb-4">
+            SAHU JI Ke Papad
+        </div>
+<div class="flex flex-wrap justify-center gap-8 mb-6">
+<a class="text-[#FDF5E6]/60 hover:text-[#E8C84A] transition-colors underline on hover font-label" href="#">Privacy Policy</a>
+<a class="text-[#FDF5E6]/60 hover:text-[#E8C84A] transition-colors underline on hover font-label" href="#">Bulk Orders</a>
+<a class="text-[#FDF5E6]/60 hover:text-[#E8C84A] transition-colors underline on hover font-label" href="#">Contact Us</a>
+<a class="text-[#FDF5E6]/60 hover:text-[#E8C84A] transition-colors underline on hover font-label" href="#">Our Story</a>
+</div>
+<div class="text-center">
+<p class="text-[#FDF5E6]/60 font-body">© 2024 SAHU JI Ke Papad. त्योहार का स्वाद, हर दिन।</p>
+</div>
+</footer>
+</body></html>

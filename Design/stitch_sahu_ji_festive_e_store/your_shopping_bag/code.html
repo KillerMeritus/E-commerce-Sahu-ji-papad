@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sahu Ji Ke Papad - Cart</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f4f1",
+                        "on-secondary-container": "#6f5100",
+                        "surface-variant": "#e2e3e0",
+                        "on-tertiary-fixed": "#001d32",
+                        "tertiary-fixed": "#cde5ff",
+                        "inverse-primary": "#ffb690",
+                        "inverse-surface": "#2f312f",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#584237",
+                        "secondary-fixed-dim": "#f9bd22",
+                        "outline-variant": "#e0c0b1",
+                        "on-primary-fixed": "#341100",
+                        "outline": "#8c7164",
+                        "tertiary": "#006398",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f9f9f6",
+                        "on-tertiary-container": "#003554",
+                        "surface-container-highest": "#e2e3e0",
+                        "secondary": "#795900",
+                        "secondary-fixed": "#ffdf9f",
+                        "tertiary-container": "#00a2f4",
+                        "on-tertiary-fixed-variant": "#004b74",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "tertiary-fixed-dim": "#93ccff",
+                        "surface-container": "#eeeeeb",
+                        "on-primary-fixed-variant": "#783200",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#f97316",
+                        "on-background": "#1a1c1b",
+                        "on-surface": "#1a1c1b",
+                        "secondary-container": "#ffc329",
+                        "surface-tint": "#9d4300",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-dim": "#dadad7",
+                        "background": "#f9f9f6",
+                        "surface": "#f9f9f6",
+                        "inverse-on-surface": "#f1f1ee",
+                        "on-primary-container": "#582200",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb690",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#ffdbca",
+                        "surface-container-high": "#e8e8e5",
+                        "primary": "#9d4300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Be Vietnam Pro", "sans-serif"],
+                        "label": ["Be Vietnam Pro", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Be Vietnam Pro', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Newsreader', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest w-full top-0 z-50 border-b border-outline-variant/40">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<!-- Brand Logo -->
+<a class="text-2xl font-bold text-primary-container font-headline flex items-center gap-2" href="#">
+                साहू जी के पापड़
+            </a>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200" href="#">Papads</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200" href="#">Achaar</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200" href="#">Other Items</a>
+<a class="text-on-surface-variant font-medium hover:text-primary-container transition-colors duration-200" href="#">About Us</a>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button aria-label="Cart" class="text-primary-container scale-95 active:scale-90 transition-transform p-2 rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-6 py-12 md:py-16">
+<div class="mb-10 text-center md:text-left">
+<h1 class="text-4xl md:text-5xl font-headline text-on-background mb-2">Your Kitchen Basket</h1>
+<p class="text-on-surface-variant font-body">Review your items before bringing them home.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
+<!-- Cart Items Section -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Cart Item 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 md:p-6 flex flex-col md:flex-row items-center gap-6 relative group transition-all hover:border-outline-variant">
+<div class="w-full md:w-32 h-32 flex-shrink-0 bg-surface-container-low rounded-md overflow-hidden">
+<img alt="Moong Dal Papad" class="w-full h-full object-cover" data-alt="Close up of traditional Indian crispy moong dal papad stacked on a rustic wooden board with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzgjYbeVGK-9RCb5euDhq-dVWRVJfIsvYHHynEKm0qfByWl-Gk42lyPtl8bstHhbiOOo6et_tsAf_psVe1nQphhenxxxNZEKj16fLroPHyUpr_Dnddc42OQoqdb8jWNUlZP8h_Je5g644VH53mXVXxUmIZDMKyhU61wo4mXzbMqBft4fR1mZnzI5FOlDRoGtyCEFzhgWBGrsCNBFRCHLb5m0bVrr8cBq-n71zLSWb2_AIHCp4jWj9pXhdArC0BvYMH8jIHaawVWgU"/>
+</div>
+<div class="flex-grow flex flex-col justify-between w-full">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-headline text-on-background font-semibold">Special Moong Papad</h3>
+<p class="text-sm text-on-surface-variant mt-1">Authentic Rajasthani Spices • 500g</p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-md hover:bg-error-container/20">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container border border-outline-variant/30 rounded-md overflow-hidden">
+<button class="px-3 py-1 hover:bg-surface-variant transition-colors text-on-background text-lg">-</button>
+<span class="px-4 py-1 font-medium text-on-background bg-surface-container-lowest">2</span>
+<button class="px-3 py-1 hover:bg-surface-variant transition-colors text-on-background text-lg">+</button>
+</div>
+<span class="text-lg font-semibold text-on-background">₹320</span>
+</div>
+</div>
+</div>
+<!-- Cart Item 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 md:p-6 flex flex-col md:flex-row items-center gap-6 relative group transition-all hover:border-outline-variant">
+<div class="w-full md:w-32 h-32 flex-shrink-0 bg-surface-container-low rounded-md overflow-hidden">
+<img alt="Mixed Pickle" class="w-full h-full object-cover" data-alt="Jar of spicy mixed Indian pickle achaar on a marble countertop with soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWL-u_U8GpoERNP6DdnOAYCW37VTmNEw16lgntiYZFpqu1kEPB-JinKJKICsSfVqkU5EYU_ssNt5SmMnYXZMNwa9bhnPaYH-bkXuvPW9bifm4ZxQqZZLN8TSICXrpDKmzdWCW7zsHHKebOD0GhofZ9TMUpRDCXn5RhysCTil5XVhKzEHmZJpM6uvbNYpzVxe7cijSK3gBnhJVPlhM0y979vZN8nalCDyR78YJ8UwLi34dUsVuhg1P0OrVLRyWVu1PGSo0UYDQt5gw"/>
+</div>
+<div class="flex-grow flex flex-col justify-between w-full">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="text-xl font-headline text-on-background font-semibold">Home-style Mixed Achaar</h3>
+<p class="text-sm text-on-surface-variant mt-1">Mango, Lemon, Chili • 250g Jar</p>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1 rounded-md hover:bg-error-container/20">
+<span class="material-symbols-outlined text-xl">delete</span>
+</button>
+</div>
+<div class="flex justify-between items-center mt-4">
+<div class="flex items-center bg-surface-container border border-outline-variant/30 rounded-md overflow-hidden">
+<button class="px-3 py-1 hover:bg-surface-variant transition-colors text-on-background text-lg">-</button>
+<span class="px-4 py-1 font-medium text-on-background bg-surface-container-lowest">1</span>
+<button class="px-3 py-1 hover:bg-surface-variant transition-colors text-on-background text-lg">+</button>
+</div>
+<span class="text-lg font-semibold text-on-background">₹180</span>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-6 border-t border-outline-variant/30">
+<button class="text-primary-container font-medium hover:text-on-primary-fixed-variant transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+                        Continue Shopping
+                    </button>
+</div>
+</div>
+<!-- Checkout Summary Sticky Sidebar -->
+<div class="lg:col-span-4 sticky top-24">
+<div class="bg-surface-container-lowest border border-outline-variant/50 rounded-lg p-6 lg:p-8 shadow-sm">
+<h2 class="text-2xl font-headline text-on-background mb-6 border-b border-outline-variant/20 pb-4">Order Summary</h2>
+<div class="flex flex-col gap-4 text-sm text-on-surface-variant font-body">
+<div class="flex justify-between">
+<span>Subtotal (3 items)</span>
+<span class="text-on-background font-medium">₹500</span>
+</div>
+<div class="flex justify-between">
+<span>Shipping</span>
+<span class="text-on-background font-medium">₹50</span>
+</div>
+<div class="flex justify-between text-secondary">
+<span>Discount (Welcome10)</span>
+<span>-₹50</span>
+</div>
+</div>
+<div class="border-t border-outline-variant/30 my-6 pt-4">
+<div class="flex justify-between items-end mb-8">
+<span class="text-lg text-on-background font-medium">Total</span>
+<span class="text-3xl font-headline font-bold text-on-background">₹500</span>
+</div>
+<button class="w-full bg-primary-container text-on-primary py-4 rounded-md font-semibold text-lg hover:bg-on-primary-fixed-variant transition-colors flex items-center justify-center gap-2 shadow-sm">
+                            Proceed to Checkout
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="mt-6 flex items-start gap-3 bg-surface-container-low p-4 rounded-md border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5">verified_user</span>
+<p class="text-xs text-on-surface-variant leading-relaxed">Safe and secure checkout. We never share your payment details. 100% authentic products straight from our kitchen to yours.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low w-full border-t border-primary-container/20 mt-auto">
+<div class="w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+<span class="text-lg font-bold text-primary-container font-headline">साहू जी के पापड़</span>
+<span class="font-body text-sm leading-relaxed text-on-surface-variant">© 2024 Sahu Ji Ke Papad. Made with ❤️ in India.</span>
+<div class="flex gap-6">
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm font-medium" href="#">WhatsApp Support</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm font-medium" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary-container transition-colors text-sm font-medium" href="#">Shipping Info</a>
+</div>
+</div>
+</footer>
+</body></html>

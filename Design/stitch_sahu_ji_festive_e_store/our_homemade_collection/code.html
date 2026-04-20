@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sahu Ji Ke Papad - Product Listing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-low": "#f4f4f1",
+                        "on-secondary-container": "#6f5100",
+                        "surface-variant": "#e2e3e0",
+                        "on-tertiary-fixed": "#001d32",
+                        "tertiary-fixed": "#cde5ff",
+                        "inverse-primary": "#ffb690",
+                        "inverse-surface": "#2f312f",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#584237",
+                        "secondary-fixed-dim": "#f9bd22",
+                        "outline-variant": "#e0c0b1",
+                        "on-primary-fixed": "#341100",
+                        "outline": "#8c7164",
+                        "tertiary": "#006398",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-bright": "#f9f9f6",
+                        "on-tertiary-container": "#003554",
+                        "surface-container-highest": "#e2e3e0",
+                        "secondary": "#795900",
+                        "secondary-fixed": "#ffdf9f",
+                        "tertiary-container": "#00a2f4",
+                        "on-tertiary-fixed-variant": "#004b74",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "tertiary-fixed-dim": "#93ccff",
+                        "surface-container": "#eeeeeb",
+                        "on-primary-fixed-variant": "#783200",
+                        "on-error-container": "#93000a",
+                        "primary-container": "#f97316",
+                        "on-background": "#1a1c1b",
+                        "on-surface": "#1a1c1b",
+                        "secondary-container": "#ffc329",
+                        "surface-tint": "#9d4300",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#261a00",
+                        "surface-dim": "#dadad7",
+                        "background": "#f9f9f6",
+                        "surface": "#f9f9f6",
+                        "inverse-on-surface": "#f1f1ee",
+                        "on-primary-container": "#582200",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ffb690",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#ffdbca",
+                        "surface-container-high": "#e8e8e5",
+                        "primary": "#9d4300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Newsreader"
+                        ],
+                        "body": [
+                            "Be Vietnam Pro"
+                        ],
+                        "label": [
+                            "Be Vietnam Pro"
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#ffffff] dark:bg-stone-900 font-['Newsreader'] tracking-tight text-[#1C1917] dark:text-stone-100 docked full-width top-0 border-b border-[#e0c0b1]/40 dark:border-stone-800 flat no shadows flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto sticky z-50">
+<div class="text-2xl font-bold text-[#F97316] font-['Newsreader']">
+            साहू जी के पापड़
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#F97316] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">Home</a>
+<a class="text-[#F97316] font-bold border-b-2 border-[#F97316] pb-1 px-3 py-2" href="#">Papads</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#F97316] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">Achaar</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#F97316] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">Other Items</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium hover:text-[#F97316] hover:bg-stone-50 dark:hover:bg-stone-800 transition-colors duration-200 px-3 py-2 rounded-lg" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="scale-95 active:scale-90 transition-transform text-[#1C1917] hover:text-[#F97316] p-2 rounded-full hover:bg-stone-50">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">search</span>
+</button>
+<button class="scale-95 active:scale-90 transition-transform text-[#1C1917] hover:text-[#F97316] p-2 rounded-full hover:bg-stone-50 relative">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_cart</span>
+<span class="absolute top-0 right-0 bg-primary-container text-on-primary-container text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">3</span>
+</button>
+<button class="md:hidden scale-95 active:scale-90 transition-transform text-[#1C1917] hover:text-[#F97316] p-2 rounded-full hover:bg-stone-50">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="max-w-7xl mx-auto px-6 py-12 md:py-20">
+<!-- Header -->
+<header class="mb-12">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-primary mb-4 leading-tight">Authentic Papads</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-2xl">Hand-rolled, sun-dried, and made with generations of love. Discover our range of traditional lentil and spice blends.</p>
+</header>
+<!-- Filters Section -->
+<section class="mb-12 flex flex-col md:flex-row gap-8 items-start md:items-center justify-between border-b border-outline-variant/40 pb-8">
+<div class="flex flex-wrap gap-3">
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-secondary font-medium hover:bg-surface-container transition-colors bg-surface-container-high text-on-primary-container">All Varieties</button>
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface-variant font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest">Urad Dal</button>
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface-variant font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest">Moong Dal</button>
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface-variant font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest">Chana Dal</button>
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-on-surface-variant font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest">Special Masala</button>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-on-surface-variant font-medium mr-2">Spice Level:</span>
+<button class="px-3 py-1.5 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-colors bg-surface-container-high text-on-primary-container flex items-center gap-1">
+                    All
+                </button>
+<button class="px-3 py-1.5 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-[#f9bd22]">local_fire_department</span> Mild
+                </button>
+<button class="px-3 py-1.5 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">local_fire_department</span>
+<span class="material-symbols-outlined text-[16px] text-primary-container -ml-2">local_fire_department</span> Medium
+                </button>
+<button class="px-3 py-1.5 rounded-full border border-outline-variant text-on-surface-variant text-sm font-medium hover:bg-surface-container transition-colors bg-surface-container-lowest flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">local_fire_department</span>
+<span class="material-symbols-outlined text-[16px] text-error -ml-2">local_fire_department</span>
+<span class="material-symbols-outlined text-[16px] text-error -ml-2">local_fire_department</span> Hot
+                </button>
+</div>
+</section>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden group flex flex-col h-full relative">
+<div class="absolute top-4 left-4 z-10 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-green-800 uppercase tracking-wider">Homemade</span>
+</div>
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img alt="Crispy urad dal papad stacked on a wooden plate with warm natural lighting" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Crispy urad dal papad stacked on a wooden plate with warm natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqz5AI-iasT5fjJYk4eYpMiAcRI8r-_D27oEWgcIj8mrwLmEt2Q9u49c5CRMv2IOS8vv339yiEK-qusmCjKIzXfrn9a0lGH-pSX6zkEXYq7LjvIfbzVXPsfi-SHj6B2UsgqP-83U8CpsaObVHO9fB6ezse5AwhnqOJO-OqOHTeJQDHS-9XjNRnyxnW5w0m9yjCsA_g4VcOC2nRd8YbqW6wQ2VZeCFeSgb6zp6Vtc7z5JkUizLx6lchAoc-2UW8rld_p8I2_hVGDJA"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Classic Urad Papad</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">The timeless classic. Crisp, light, and perfectly seasoned with black pepper and asafoetida. A staple for every meal.</p>
+<div class="mt-auto">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm text-on-surface-variant font-medium">400g Pack</span>
+<span class="font-headline text-2xl font-bold text-primary">₹140</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-medium py-3 px-4 rounded-[6px] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span> Add to Cart
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden group flex flex-col h-full relative">
+<div class="absolute top-4 left-4 z-10 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-green-800 uppercase tracking-wider">Homemade</span>
+</div>
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img alt="Spicy masala papad garnished with onions and tomatoes on a white ceramic plate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Spicy masala papad garnished with onions and tomatoes on a white ceramic plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu_6rIJu3mkNY1UF2T3WwKqXvtJTRZY2eODhpCDmKS_ZCLIcc7YrJhBw1AzSMGTw6ud-DoxQJBnRNUq-dgKMsLn_WW9AgxOQd4Whlxz__DIS02Q0OpXOXSAjJBC1GsVFFkPjU_gDq6NaxFO4Bo_oFdirdg8botYT2cWZMQOz17LBzu4Es8lYPXQOuSdDyVmDl0l6-yaF_ZUe314g974vo3g2FRUc67fGtJUS62qKBwtGtxp52DkbIc5rctRuu5sFeM7w1Rsg34EHU"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Punjabi Masala Papad</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">A fiery blend of spices, red chili, and cumin. Perfect for those who love a robust, spicy kick with their snacks.</p>
+<div class="mt-auto">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm text-on-surface-variant font-medium">400g Pack</span>
+<span class="font-headline text-2xl font-bold text-primary">₹160</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-medium py-3 px-4 rounded-[6px] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span> Add to Cart
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden group flex flex-col h-full relative">
+<div class="absolute top-4 left-4 z-10 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-green-800 uppercase tracking-wider">Homemade</span>
+</div>
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img alt="Light yellow moong dal papad scattered on a clean white marble countertop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Light yellow moong dal papad scattered on a clean white marble countertop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1rYKGyPd5j_bPKTXG0gOZA07hBwmewds6V3ZC2qkCRkkQ6uraPwQ0ZSLkjYAeWVzNgue82eLNdCZKpdbiyEGyFie4bFOPiHBLqsQdCjbplhbQzcM7pP8WwiZCSSKeJYOX7psSq57Hlh4eHLc4dXtlAuI4VgFPXVUcpbTgiMoPOHSX6L7lVVEunO5y9vMZXJe5A0uWH2sBFhgSpwj8iX6PlY99zDGuq1pZ3rI3X6TezUXtXT3-FRXNiJKdmRi1RjMNc5vjNR5exI4"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Moong Dal Special</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">Lighter and milder. Made predominantly with premium moong dal, offering a delicate crunch and subtle flavor profile.</p>
+<div class="mt-auto">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm text-on-surface-variant font-medium">400g Pack</span>
+<span class="font-headline text-2xl font-bold text-primary">₹150</span>
+</div>
+<button class="w-full bg-primary hover:bg-on-primary-fixed-variant text-on-primary font-medium py-3 px-4 rounded-[6px] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span> Add to Cart
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden group flex flex-col h-full relative">
+<div class="absolute top-4 left-4 z-10 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-green-800 uppercase tracking-wider">Homemade</span>
+</div>
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img alt="Garlic infused papad with visible herb flecks on a dark slate background" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Garlic infused papad with visible herb flecks on a dark slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZT8TvI3UjofpKKdldpy3pJ3-qlvRN-i9smGzOjlr8QumhnUnUS2N5W-rn4YTaOyjCUK_iyJ56V8K4HrpE3WHGUKi-WNtTsS3OMCNXGkL78ymT883LxePe3ZjxIsDr_uD7XHIxdveYzvqm0EXh9vTSWpq6gCYkppfeHqwAKPie_MR8W2YKL2roL7Nf8FhZkLPRAcxEGHc1lCNeSFkVx9aJHmjOu28855DGv8dV1kV2tS5HZDmI_zsTqGR5MdbSGz_LVQRKQDk-DZQ"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Garlic (Lahsun) Papad</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">Infused with roasted garlic and green chilies. A fragrant, pungent delight that pairs exceptionally well with evening tea.</p>
+<div class="mt-auto">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm text-on-surface-variant font-medium">400g Pack</span>
+<span class="font-headline text-2xl font-bold text-primary">₹160</span>
+</div>
+<button class="w-full bg-surface-container-lowest border border-outline-variant hover:bg-surface-container text-secondary font-medium py-3 px-4 rounded-[6px] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span> Add to Cart
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 5 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden group flex flex-col h-full relative">
+<div class="absolute top-4 left-4 z-10 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-green-800 uppercase tracking-wider">Homemade</span>
+</div>
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img alt="Small round coin papads in a wooden bowl with scattered cumin seeds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Small round coin papads in a wooden bowl with scattered cumin seeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZ_Rtj0sbWSfLKBB-Jdpv99QdjTXEnPJ97AgbZjVLItCyJIvHLcGIlr4TDYNeZ4NLT7ZVF5gBkCEiVGVTtLpIg77a6jcnGNxdzp5bqN2wAqXvJ7exFZ5pkQwSRJnWgOz2dOJOJ5ax86UNpNw8f_4gDqmHvB2o797kBDAmbui5UY9sp0J_HLMP2XJtxRTzIoL857bnmLcVdwSchjbm5Ga4IzfQdVhc-5nFu60oBvy6A4ujgnTdP9xC_4Zs_4MpXJK8aP2gXyiJxws"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Jeera Coin Papad</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">Bite-sized discs loaded with roasted cumin. Ideal as a quick cocktail snack or a playful side dish for kids.</p>
+<div class="mt-auto">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm text-on-surface-variant font-medium">250g Pack</span>
+<span class="font-headline text-2xl font-bold text-primary">₹120</span>
+</div>
+<button class="w-full bg-surface-container-lowest border border-outline-variant hover:bg-surface-container text-secondary font-medium py-3 px-4 rounded-[6px] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span> Add to Cart
+                        </button>
+</div>
+</div>
+</article>
+<!-- Product Card 6 -->
+<article class="bg-surface-container-lowest rounded-xl border border-outline-variant/40 overflow-hidden group flex flex-col h-full relative">
+<div class="absolute top-4 left-4 z-10 bg-surface/80 backdrop-blur-md px-3 py-1 rounded-full border border-outline-variant/40 flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-green-600" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-xs font-semibold text-green-800 uppercase tracking-wider">Homemade</span>
+</div>
+<div class="h-64 overflow-hidden bg-surface-container-low relative">
+<img alt="Rich green spinach infused papads on a rustic wooden table top" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rich green spinach infused papads on a rustic wooden table top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbyO-Hwclk9T4bF_sDbvRiKf6c16C_LjD7812GhEQTbTw6_AjJnHRVEj5fVgCrMvpaE88sw8IgpdLV7dO2pjemq5PyiuipPKtZAaUcmOq7ngEP73u3A5zCZ1hBm17fjUMSdAzHsdMw5gxRWEQaak9HuetxL3qp9kFdD5yNLBoJeySZ2LCp8HEXqni0QOcVYYz39ynb-ubsoLO6Oa1FWBPmDHEuPEVJ3Zs_kvamRzkfAfNao9QTupGIeGZdHB-P1czYsZARpc9VGrw"/>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<div class="flex justify-between items-start mb-2">
+<h2 class="font-headline text-2xl font-bold text-on-surface">Palak (Spinach) Papad</h2>
+</div>
+<p class="font-body text-sm text-on-surface-variant mb-6 line-clamp-2">A healthy twist. Blended with fresh spinach puree and mild spices for a vibrant color and unique nutritional profile.</p>
+<div class="mt-auto">
+<div class="flex justify-between items-center mb-4">
+<span class="text-sm text-on-surface-variant font-medium">400g Pack</span>
+<span class="font-headline text-2xl font-bold text-primary">₹170</span>
+</div>
+<button class="w-full bg-surface-container-lowest border border-outline-variant hover:bg-surface-container text-secondary font-medium py-3 px-4 rounded-[6px] transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span> Add to Cart
+                        </button>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f1] dark:bg-stone-950 font-['Poppins'] text-sm leading-relaxed text-stone-700 dark:text-stone-300 full-width border-t border-[#F97316]/20 flat no shadows w-full py-12 px-6 flex flex-col md:flex-row justify-between items-center gap-6 mt-20">
+<div class="text-lg font-bold text-[#F97316]">
+            साहू जी के पापड़
+        </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-stone-500 dark:text-stone-500 hover:text-[#F97316] transition-colors opacity-80 hover:opacity-100 font-medium" href="#">WhatsApp Support</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-[#F97316] transition-colors opacity-80 hover:opacity-100 font-medium" href="#">Privacy Policy</a>
+<a class="text-stone-500 dark:text-stone-500 hover:text-[#F97316] transition-colors opacity-80 hover:opacity-100 font-medium" href="#">Shipping Info</a>
+</div>
+<div class="text-stone-500 dark:text-stone-500">
+            © 2024 Sahu Ji Ke Papad. Made with ❤️ in India.
+        </div>
+</footer>
+</body></html>
