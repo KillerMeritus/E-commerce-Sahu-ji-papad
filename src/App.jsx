@@ -9,6 +9,9 @@ import Footer from './components/layout/Footer'
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import ProductDetailPage from './pages/ProductDetailPage'
+import CartPage from './pages/CartPage'
+import OurStoryPage from './pages/OurStoryPage'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
   return (
@@ -41,6 +44,9 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/product/:id" element={<ProductDetailPage />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/our-story" element={<OurStoryPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 
