@@ -1,0 +1,106 @@
+.products-page {
+  padding-top: var(--space-8);
+}
+
+.products-page__header {
+  margin-bottom: var(--space-12);
+}
+
+.products-page__title {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-4);
+}
+
+/* ---- Filters ---- */
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--space-10);
+  background-color: var(--color-surface);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+}
+
+.filters__search {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.filters__search-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4) var(--space-3) 42px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  transition: all var(--transition-fast);
+}
+
+.filters__search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.filters__search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-tertiary);
+  width: 18px;
+  height: 18px;
+}
+
+.filters__cats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.filter-chip {
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-pill);
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.filter-chip:hover {
+  border-color: var(--color-primary-light);
+  background-color: var(--color-surface-card);
+}
+
+.filter-chip.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+}
+
+.products-page__count {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.no-results {
+  text-align: center;
+  padding: var(--space-24) 0;
+  color: var(--color-text-secondary);
+}
+
+.no-results svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: var(--space-4);
+  opacity: 0.3;
+}

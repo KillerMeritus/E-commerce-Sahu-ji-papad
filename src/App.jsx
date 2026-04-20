@@ -5,6 +5,11 @@ import { Toaster } from 'react-hot-toast'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 
+// Pages
+import HomePage from './pages/HomePage'
+import ProductsPage from './pages/ProductsPage'
+import ProductDetailPage from './pages/ProductDetailPage'
+
 function App() {
   return (
     <BrowserRouter>
@@ -33,7 +38,9 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/" element={<div>Home — Phase 4</div>} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/products" element={<ProductsPage />} />
+          <Route path="/product/:id" element={<ProductDetailPage />} />
         </Routes>
       </main>
 
