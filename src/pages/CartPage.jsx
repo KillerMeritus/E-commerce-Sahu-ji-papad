@@ -13,7 +13,7 @@ export default function CartPage() {
 
   // Generate WhatsApp text
   const getWhatsAppLink = () => {
-    const phoneNumber = "919876543210" // Sahu Ji phone number
+    const phoneNumber = "919409435853" // Sahu Ji's WhatsApp number
     let msg = `Hello Sahu Ji Ke Papad,\n\nI would like to place an order:\n\n`
     
     items.forEach((item, index) => {

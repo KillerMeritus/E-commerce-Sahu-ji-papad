@@ -52,7 +52,7 @@ export default function Footer() {
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">📞</span>
-                <span>+91 98765 43210</span>
+                <span>+91 94094 35853</span>
               </div>
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">✉️</span>
