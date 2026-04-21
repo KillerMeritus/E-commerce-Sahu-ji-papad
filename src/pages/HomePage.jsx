@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import { categories } from '../data/categories'
-import { getFeaturedProducts } from '../data/products'
+import { categories, getFeaturedProducts } from '../data/products'
 import ProductCard from '../components/shared/ProductCard'
 import './HomePage.css'
 
@@ -54,8 +53,8 @@ export default function HomePage() {
                 <span className="category-card__emoji">{cat.emoji}</span>
                 <div className="category-card__info">
                   <span className="category-card__title">
-                    {cat.label}
-                    <span className="category-card__title-hindi font-hindi">{cat.labelHindi}</span>
+                    {cat.labelEn}
+                    <span className="category-card__title-hindi font-hindi">{cat.labelHi}</span>
                   </span>
                 </div>
               </Link>

@@ -17,7 +17,7 @@ export default function CartPage() {
     let msg = `Hello Sahu Ji Ke Papad,\n\nI would like to place an order:\n\n`
     
     items.forEach((item, index) => {
-      msg += `${index + 1}. ${item.product.name} (${item.selectedSize.label})\n`
+      msg += `${index + 1}. ${item.product.nameEn} (${item.selectedSize.label})\n`
       msg += `   Qty: ${item.quantity} x ₹${item.selectedSize.price} = ₹${item.quantity * item.selectedSize.price}\n\n`
     })
 
@@ -54,10 +54,10 @@ export default function CartPage() {
           <div className="cart-items">
             {items.map(item => (
               <div key={item.key} className="cart-item">
-                <img src={item.product.image} alt={item.product.name} className="cart-item__img" />
+                <img src={item.product.image} alt={item.product.nameEn} className="cart-item__img" />
                 
                 <div className="cart-item__info">
-                  <h3 className="cart-item__title">{item.product.name}</h3>
+                  <h3 className="cart-item__title">{item.product.nameEn}</h3>
                   <p className="cart-item__meta">Pack Size: {item.selectedSize.label}</p>
                   
                   <div className="cart-item__controls">

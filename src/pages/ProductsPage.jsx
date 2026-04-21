@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { products } from '../data/products'
-import { categories } from '../data/categories'
+import { products, categories } from '../data/products'
 import ProductCard from '../components/shared/ProductCard'
 import './ProductsPage.css'
 
@@ -15,8 +14,8 @@ export default function ProductsPage() {
     return products.filter((p) => {
       const matchesCat = activeCat === 'all' || p.category === activeCat
       const matchesSearch = 
-        p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        p.nameHindi.includes(searchQuery)
+        p.nameEn.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        p.nameHi.includes(searchQuery)
       return matchesCat && matchesSearch
     })
   }, [activeCat, searchQuery])
@@ -65,8 +64,7 @@ export default function ProductsPage() {
               className={`filter-chip ${activeCat === cat.id ? 'active' : ''}`}
               onClick={() => handleCatChange(cat.id)}
             >
-              <span>{cat.emoji}</span>
-              {cat.label}
+              {cat.labelEn}
             </button>
           ))}
         </div>

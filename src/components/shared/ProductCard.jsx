@@ -15,7 +15,7 @@ export default function ProductCard({ product }) {
     e.preventDefault()
     e.stopPropagation()
     addItem(product)
-    toast.success(`${product.name} added to cart!`)
+    toast.success(`${product.nameEn} added to cart!`)
   }
 
   const handleWishlist = (e) => {
@@ -31,7 +31,7 @@ export default function ProductCard({ product }) {
     <article className="product-card">
       {/* Top Floating Actions */}
       <div className="product-card__badges">
-        <StatusBadge status={product.badge} />
+        <StatusBadge status={product.isBestseller ? 'bestseller' : null} />
       </div>
       
       <button 
@@ -48,7 +48,7 @@ export default function ProductCard({ product }) {
       <Link to={`/product/${product.id}`} className="product-card__image-link">
         <img 
           src={product.image} 
-          alt={product.name} 
+          alt={product.nameEn} 
           className="product-card__image" 
           loading="lazy"
         />
@@ -58,21 +58,20 @@ export default function ProductCard({ product }) {
       <div className="product-card__content">
         <div className="product-card__header">
           <h3 className="product-card__title">
-            <span className="product-card__title-hindi font-hindi">{product.nameHindi}</span>
-            {product.name}
+            <span className="product-card__title-hindi font-hindi">{product.nameHi}</span>
+            {product.nameEn}
           </h3>
           {product.isVeg && <VegBadge />}
         </div>
 
         <div className="product-card__meta">
-          <span>{product.weight}</span>
+          <span>{product.unit}</span>
           <span>•</span>
           <span>Homemade</span>
         </div>
 
         <div className="product-card__price-row">
-          <div className="product-card__prices">
-            <span className="product-card__mrp">₹{product.mrp}</span>
+          <div className="product-card__prices" style={{ justifyItems: "center", alignItems: "center" }}>
             <span className="product-card__price">₹{product.price}</span>
           </div>
           

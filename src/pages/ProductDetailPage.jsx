@@ -20,9 +20,7 @@ export default function ProductDetailPage() {
   // Initialize size
   useEffect(() => {
     if (product) {
-      const defaultSize = product.packSizes.length > 0 
-        ? product.packSizes[0] 
-        : { label: product.weight, price: product.price, mrp: product.mrp }
+      const defaultSize = { label: product.unit, price: product.price }
       setSelectedSize(defaultSize)
     }
     window.scrollTo(0, 0)
@@ -59,7 +57,7 @@ export default function ProductDetailPage() {
       <nav style={{ marginBottom: 'var(--space-6)', fontSize: '13px' }}>
         <Link to="/products" style={{ color: 'var(--color-text-secondary)' }}>Shop</Link>
         <span style={{ margin: '0 8px', color: 'var(--color-text-tertiary)' }}>/</span>
-        <span style={{ color: 'var(--color-text-primary)' }}>{product.name}</span>
+        <span style={{ color: 'var(--color-text-primary)' }}>{product.nameEn}</span>
       </nav>
 
       <div className="pdp__grid">
@@ -67,48 +65,33 @@ export default function ProductDetailPage() {
         {/* Gallery */}
         <div className="pdp__gallery">
           <div className="pdp__image-container">
-            <img src={product.image} alt={product.name} className="pdp__image" />
+            <img src={product.image} alt={product.nameEn} className="pdp__image" />
           </div>
         </div>
 
         {/* Info */}
         <div className="pdp__info">
           <div className="pdp__badges">
-            <StatusBadge status={product.badge} />
+            <StatusBadge status={product.isBestseller ? 'bestseller' : null} />
             <VegBadge />
           </div>
 
-          <h1 className="pdp__title">{product.name}</h1>
-          <span className="pdp__title-hindi font-hindi">{product.nameHindi}</span>
+          <h1 className="pdp__title">{product.nameEn}</h1>
+          <span className="pdp__title-hindi font-hindi">{product.nameHi}</span>
 
           <div className="pdp__pricing">
-            <span className="pdp__price">₹{selectedSize?.price || product.price}</span>
-            <span className="pdp__mrp">₹{selectedSize?.mrp || product.mrp}</span>
-            <span className="pdp__discount">{product.discount}% OFF</span>
+            <span className="pdp__price">₹{selectedSize?.price || product.price} /{product.unit}</span>
           </div>
 
           <p className="pdp__desc">
             {product.description}
           </p>
+          <p className="pdp__desc font-hindi" style={{ marginTop: 'var(--space-2)' }}>
+            {product.descriptionHi}
+          </p>
 
           {/* Size Selection */}
-          {product.packSizes.length > 0 && (
-            <>
-              <h4 className="pdp__label">Select Pack Size</h4>
-              <div className="size-grid">
-                {product.packSizes.map((size) => (
-                  <button 
-                    key={size.label} 
-                    className={`size-btn ${selectedSize?.label === size.label ? 'active' : ''}`}
-                    onClick={() => setSelectedSize(size)}
-                  >
-                    <span className="size-btn__label">{size.label}</span>
-                    <span className="size-btn__price">₹{size.price}</span>
-                  </button>
-                ))}
-              </div>
-            </>
-          )}
+
 
           <h4 className="pdp__label">Quantity</h4>
           <div className="pdp__actions">
@@ -120,14 +103,7 @@ export default function ProductDetailPage() {
 
           {/* Product Details */}
           <div className="pdp__specs">
-            <div className="spec-item">
-              <p className="spec-item__label">Ingredients</p>
-              <p className="spec-item__value">{product.ingredients}</p>
-            </div>
-            <div className="spec-item">
-              <p className="spec-item__label">Shelf Life</p>
-              <p className="spec-item__value">{product.shelfLife}</p>
-            </div>
+
             <div className="spec-item">
               <p className="spec-item__label">Certifications</p>
               <p className="spec-item__value">Homemade, FSSAI Pending</p>

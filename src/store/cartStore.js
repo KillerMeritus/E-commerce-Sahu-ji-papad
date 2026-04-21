@@ -15,8 +15,7 @@ const useCartStore = create(
 
       addItem: (product, selectedSize = null) => {
         const { items } = get()
-        const size = selectedSize ||
-          (product.packSizes.length > 0 ? product.packSizes[0] : { label: product.weight, price: product.price, mrp: product.mrp })
+        const size = selectedSize || { label: product.unit, price: product.price }
 
         // Unique key: product id + size label
         const key = `${product.id}__${size.label}`
