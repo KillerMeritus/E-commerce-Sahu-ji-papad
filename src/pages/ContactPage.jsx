@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './ContactPage.css'
 
-const PHONE = '919409435853'
-const PHONE_DISPLAY = '+91 94094 35853'
+const PHONE = '919109435853'
+const PHONE_DISPLAY = '+91 91094 35853'
 
 export default function ContactPage() {
   const [form, setForm] = useState({ name: '', phone: '', subject: 'general', message: '' })
